@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img
+          src="/source/img/logo.svg"
+          width="185px"
+          height="96px"
+          alt="Логотип Седона."
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и Видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro-catalog">
+        <h1 class="visually-hidden">Городок Седона</h1>
+        <img
+          class="intro-form__logo"
+          src="/source/img/frame-sedona.svg"
+          width="229px"
+          height="39px"
+          alt="Приветствие на сайте."
+        />
+      </section>
+      <section class="photos">
+        <h2 class="photos__title">Фото и видео</h2>
+        <p class="photos__description">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.
+        </p>
+        <div class="photos__wrapper">
+          <div class="photo">
+            <a class="photo__link" href="#">
+              <img
+                class="photo__image"
+                src="/source/img/space.jpg"
+                alt="Неродные просторы."
+              />
+            </a>
+            <div class="photo__description">
+              <p class="photo__name">Неродные просторы</p>
+              <p class="photo__author">Автор фото: Борис</p>
+              <span class="photo__likes-number">1350</span>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#">
+              <img
+                class="photo__image"
+                src="/source/img/vegetation.jpg"
+                alt="Местная растительность."
+              />
+            </a>
+            <div class="photo__description">
+              <p class="photo__name">Местная растительность</p>
+              <p class="photo__author">Автор фото: Сергей</p>
+              <span class="photo__likes-number">143</span>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#">
+              <img
+                class="photo__image"
+                src="/source/img/road.jpg"
+                alt="Дорога на север."
+              />
+            </a>
+            <div class="photo__description">
+              <p class="photo__name">Дорога на север</p>
+              <p class="photo__author">Автор фото: Петр</p>
+              <span class="photo__likes-number">96</span>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#">
+              <img
+                class="photo__image"
+                src="/source/img/devil-bridge.jpg"
+                alt="Мост дьявола."
+              />
+            </a>
+            <div class="photo__description">
+              <p class="photo__name">Мост дьявола</p>
+              <p class="photo__author">Автор фото: Антон</p>
+              <span class="photo__likes-number">254</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__description">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в очередной раз!
+        </p>
+        <img src="/source/img/video.jpg" alt="Видео." />
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__link" href="#">
+          <img
+            src="/source/img/visit.svg"
+            width="166px"
+            height="26px"
+            alt="Посетить Седону"
+          />
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social-item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                >Мы в Вконтакте</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+                >Мы в Телеграме</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+                >Мы в Ютубе</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          class="main-footer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          >Разработано HTML Academy</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

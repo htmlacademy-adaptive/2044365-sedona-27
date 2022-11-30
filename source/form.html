@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img
+          src="/source/img/logo.svg"
+          width="185px"
+          height="96px"
+          alt="Логотип Седона."
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и Видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro-form">
+        <h1 class="visually-hidden">Городок Седона</h1>
+        <img
+          class="intro-form__logo"
+          src="/source/img/frame-sedona.svg"
+          width="229px"
+          height="39px"
+          alt="Приветствие на сайте."
+        />
+      </section>
+      <section class="form">
+        <h2 class="form__title">Оставьте свой отзыв</h2>
+        <p class="form__description">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+        <form action="" method="get">
+          <div class="form-sections">
+            <fieldset class="form-sections__field">
+              <legend class="form-sections__legend">Представьтесь:</legend>
+              <div class="form-sections__line">
+                <label for="name">Имя*:</label>
+                <input
+                  class="form-sections__meet"
+                  type="text"
+                  id="name"
+                  placeholder="Пётр"
+                  required
+                />
+              </div>
+              <div class="form-sections__line">
+                <label for="surname">Фамилия*:</label>
+                <input
+                  class="form-sections__meet"
+                  type="text"
+                  id="surname"
+                  placeholder="Пустота"
+                  required
+                />
+              </div>
+              <div class="form-sections__line">
+                <label for="middle-name">Отчество:</label>
+                <input
+                  class="form-sections__meet"
+                  type="text"
+                  id="middle-name"
+                  placeholder="Викторович"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset class="form-sections__field">
+              <legend class="form-sections__legend">
+                Контактная информация:
+              </legend>
+              <div class="form-sections__line">
+                <label for="phone">Контактный телефон*:</label>
+                <input
+                  class="form-sections__contact"
+                  type="text"
+                  id="phone"
+                  placeholder="Введите телефон"
+                  required
+                />
+              </div>
+              <div class="form-sections__line">
+                <label for="e-mail">Электронная почта*:</label>
+                <input
+                  class="form-sections__contact"
+                  type="text"
+                  id="e-mail"
+                  placeholder="Введите e-mail"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset class="form-sections__field">
+              <legend class="form-sections__legend">
+                Ваше общее впечатление:
+              </legend>
+              <ul class="form-sections__list">
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__grade"
+                      type="radio"
+                      name="grade"
+                      value="positive"
+                      checked
+                    />
+                    Скорее положительное
+                  </label>
+                </li>
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__grade"
+                      type="radio"
+                      name="grade"
+                      value="negative"
+                    />
+                    Скорее отрицательное
+                  </label>
+                </li>
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__grade"
+                      type="radio"
+                      name="grade"
+                      value="neutral"
+                    />
+                    Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-sections__field">
+              <legend class="form-sections__legend">
+                Посещенные достопримечательности:
+              </legend>
+              <ul class="form-sections__list">
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__attractions"
+                      type="checkbox"
+                      name="devils-bridge"
+                      checked
+                    />
+                    Мост Дьявола
+                  </label>
+                </li>
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__attractions"
+                      type="checkbox"
+                      name="mountain-bell"
+                      checked
+                    />
+                    Гора-Колокол
+                  </label>
+                </li>
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__attractions"
+                      type="checkbox"
+                      name="slide-park"
+                      checked
+                    />
+                    Слайд-парк
+                  </label>
+                </li>
+                <li class="form-sections__item">
+                  <label>
+                    <input
+                      class="form-sections__attractions"
+                      type="checkbox"
+                      name="red-rocks"
+                    />
+                    Красные скалы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-sections-field">
+              <legend class="form-sections__legend">
+                Опишите свои эмоции:
+              </legend>
+              <textarea
+                class="form-sections__comment"
+                placeholder="Опишите подробно все свои восторги"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input
+                class="form-sections__submit"
+                type="submit"
+                value="Отправить отзыв"
+              />
+              <small class="form-sections__help">* — обязательные поля</small>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__link" href="#">
+          <img
+            src="/source/img/visit.svg"
+            width="166px"
+            height="26px"
+            alt="Посетить Седону"
+          />
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social-item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                >Мы в Вконтакте</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+                >Мы в Телеграме</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+                >Мы в Ютубе</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          class="main-footer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          >Разработано HTML Academy</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
