@@ -41,8 +41,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="intro-inner">
-        <h1 class="visually-hidden">Городок Седона</h1>
+      <div class="intro-inner">
         <img
           class="intro-inner__logo"
           src="img/frame-sedona.svg"
@@ -50,182 +49,184 @@
           height="39px"
           alt="Приветствие на сайте."
         />
-      </section>
+      </div>
       <section class="form">
-        <h2 class="form__title">Оставьте свой отзыв</h2>
+        <h1 class="form__title">Оставьте свой отзыв</h1>
         <p class="form__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
-        <form action="" method="get">
-          <div class="form-sections">
-            <fieldset class="form-sections__field">
-              <legend class="form-sections__legend">Представьтесь:</legend>
-              <div class="form-sections__line">
-                <label for="name">Имя*:</label>
-                <input
-                  class="form-sections__meet"
-                  type="text"
-                  id="name"
-                  placeholder="Пётр"
-                  required
-                />
-              </div>
-              <div class="form-sections__line">
-                <label for="surname">Фамилия*:</label>
-                <input
-                  class="form-sections__meet"
-                  type="text"
-                  id="surname"
-                  placeholder="Пустота"
-                  required
-                />
-              </div>
-              <div class="form-sections__line">
-                <label for="middle-name">Отчество:</label>
-                <input
-                  class="form-sections__meet"
-                  type="text"
-                  id="middle-name"
-                  placeholder="Викторович"
-                  required
-                />
-              </div>
-            </fieldset>
-            <fieldset class="form-sections__field">
-              <legend class="form-sections__legend">
-                Контактная информация:
-              </legend>
-              <div class="form-sections__line">
-                <label for="phone">Контактный телефон*:</label>
-                <input
-                  class="form-sections__contact"
-                  type="text"
-                  id="phone"
-                  placeholder="Введите телефон"
-                  required
-                />
-              </div>
-              <div class="form-sections__line">
-                <label for="e-mail">Электронная почта*:</label>
-                <input
-                  class="form-sections__contact"
-                  type="text"
-                  id="e-mail"
-                  placeholder="Введите e-mail"
-                  required
-                />
-              </div>
-            </fieldset>
-            <fieldset class="form-sections__field">
-              <legend class="form-sections__legend">
-                Ваше общее впечатление:
-              </legend>
-              <ul class="form-sections__list">
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__grade"
-                      type="radio"
-                      name="grade"
-                      value="positive"
-                      checked
-                    />
-                    Скорее положительное
-                  </label>
-                </li>
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__grade"
-                      type="radio"
-                      name="grade"
-                      value="negative"
-                    />
-                    Скорее отрицательное
-                  </label>
-                </li>
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__grade"
-                      type="radio"
-                      name="grade"
-                      value="neutral"
-                    />
-                    Затрудняюсь ответить
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-sections__field">
-              <legend class="form-sections__legend">
-                Посещенные достопримечательности:
-              </legend>
-              <ul class="form-sections__list">
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__attractions"
-                      type="checkbox"
-                      name="devils-bridge"
-                      checked
-                    />
-                    Мост Дьявола
-                  </label>
-                </li>
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__attractions"
-                      type="checkbox"
-                      name="mountain-bell"
-                      checked
-                    />
-                    Гора-Колокол
-                  </label>
-                </li>
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__attractions"
-                      type="checkbox"
-                      name="slide-park"
-                      checked
-                    />
-                    Слайд-парк
-                  </label>
-                </li>
-                <li class="form-sections__item">
-                  <label>
-                    <input
-                      class="form-sections__attractions"
-                      type="checkbox"
-                      name="red-rocks"
-                    />
-                    Красные скалы
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-sections-field">
-              <legend class="form-sections__legend">
-                Опишите свои эмоции:
-              </legend>
-              <textarea
-                class="form-sections__comment"
-                placeholder="Опишите подробно все свои восторги"
-                cols="30"
-                rows="10"
-              ></textarea>
+        <form class="form__form-sections form-sections" action="" method="get">
+          <fieldset class="form-sections__field">
+            <legend class="form-sections__legend">Представьтесь:</legend>
+            <div class="form-sections__line">
+              <label class="form-sections__label" for="name">Имя*:</label>
               <input
-                class="form-sections__submit"
-                type="submit"
-                value="Отправить отзыв"
+                class="form-sections__input"
+                type="text"
+                id="name"
+                placeholder="Пётр"
+                required
               />
-              <small class="form-sections__help">* — обязательные поля</small>
-            </fieldset>
-          </div>
+            </div>
+            <div class="form-sections__line">
+              <label class="form-sections__label" for="surname"
+                >Фамилия*:</label
+              >
+              <input
+                class="form-sections__input"
+                type="text"
+                id="surname"
+                placeholder="Пустота"
+                required
+              />
+            </div>
+            <div class="form-sections__line">
+              <label class="form-sections__label" for="middle-name"
+                >Отчество:</label
+              >
+              <input
+                class="form-sections__input"
+                type="text"
+                id="middle-name"
+                placeholder="Викторович"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form-sections__field">
+            <legend class="form-sections__legend">
+              Контактная информация:
+            </legend>
+            <div class="form-sections__line">
+              <label class="form-sections__label" for="phone"
+                >Контактный телефон*:</label
+              >
+              <input
+                class="form-sections__input"
+                type="text"
+                id="phone"
+                placeholder="Введите телефон"
+                required
+              />
+            </div>
+            <div class="form-sections__line">
+              <label class="form-sections__label" for="e-mail"
+                >Электронная почта*:</label
+              >
+              <input
+                class="form-sections__input"
+                type="text"
+                id="e-mail"
+                placeholder="Введите e-mail"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form-sections__field">
+            <legend class="form-sections__legend">
+              Ваше общее впечатление:
+            </legend>
+            <ul class="form-sections__list">
+              <li class="form-sections__item">
+                <label class="form-sections__radio-label">
+                  <input
+                    class="form-sections__radio-input"
+                    type="radio"
+                    name="grade"
+                    value="positive"
+                    checked
+                  />
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="form-sections__item">
+                <label class="form-sections__radio-label">
+                  <input
+                    class="form-sections__radio-input"
+                    type="radio"
+                    name="grade"
+                    value="negative"
+                  />
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="form-sections__item">
+                <label class="form-sections__radio-label">
+                  <input
+                    class="form-sections__radio-input"
+                    type="radio"
+                    name="grade"
+                    value="neutral"
+                  />
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-sections__field">
+            <legend class="form-sections__legend">
+              Посещенные достопримечательности:
+            </legend>
+            <ul class="form-sections__list">
+              <li class="form-sections__item">
+                <label class="form-sections__checkbox-label">
+                  <input
+                    class="form-sections__checkbox-input"
+                    type="checkbox"
+                    name="devils-bridge"
+                    checked
+                  />
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="form-sections__item">
+                <label class="form-sections__checkbox-label">
+                  <input
+                    class="form-sections__checkbox-input"
+                    type="checkbox"
+                    name="mountain-bell"
+                    checked
+                  />
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="form-sections__item">
+                <label class="form-sections__checkbox-label">
+                  <input
+                    class="form-sections__checkbox-input"
+                    type="checkbox"
+                    name="slide-park"
+                    checked
+                  />
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="form-sections__item">
+                <label class="form-sections__checkbox-label">
+                  <input
+                    class="form-sections__checkbox-input"
+                    type="checkbox"
+                    name="red-rocks"
+                  />
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form-sections-field">
+            <h3 class="form-sections__legend">Опишите свои эмоции:</h3>
+            <textarea
+              class="form-sections__comment"
+              placeholder="Опишите подробно все свои восторги"
+              cols="30"
+              rows="10"
+            ></textarea>
+            </div>
+            <button class="form-sections__submit" type="submit">
+              Отправить отзыв
+            </button>
+            <small class="form-sections__help">* — обязательные поля</small>
         </form>
       </section>
     </main>
